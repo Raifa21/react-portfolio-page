@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/pageheader";
+import PageHeader from "@/components/pageheader";
 import Link from "next/link";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";

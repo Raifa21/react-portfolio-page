@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/pageheader";
+import PageHeader from "@/components/pageheader";
 
 export default function Home() {
   return (

@@ -7,11 +7,9 @@ export default function Home() {
       <PageHeader />
       <div className="body">
         <div className="mainpage">
-          <p className="hello-text"> Hello! </p> <br />
-          I&apos;m an aspiring software engineer, currently studying for
-          university.
-          <br />I make stuff in my free time, and I&apos;m always looking for
-          new things to learn.
+          <p className="hello-text"> Hello! I am:</p>
+          <p className="name-text"> Kotaro Yoshizawa</p>
+          <p className="job-text">Web Developer / Digital Composer</p>
         </div>
       </div>
     </>

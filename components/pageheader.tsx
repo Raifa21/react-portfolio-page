@@ -3,13 +3,19 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import HeaderMenu from "./menu";
+import { Shadows_Into_Light } from "next/font/google";
+
+const shadowsIntoLight = Shadows_Into_Light({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const PageHeader: React.FC = () => {
   const [isCompact, setIsCompact] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsCompact(window.innerWidth < 800); // Change 768 to your desired width threshold
+      setIsCompact(window.innerWidth < 600); // Change 768 to your desired width threshold
     };
 
     // Initial call to set the initial state
@@ -28,12 +34,9 @@ const PageHeader: React.FC = () => {
       <div className="headerlogo">
         <div>
           <Link href="/" legacyBehavior passHref>
-            <a className="biglogo">Kotaro Yoshizawa</a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/" legacyBehavior passHref>
-            <a className="smalllogo">CS Student / Digital Composer</a>
+            <div className={shadowsIntoLight.className}>
+              <a className="biglogo">K.Yoshi</a>
+            </div>
           </Link>
         </div>
       </div>

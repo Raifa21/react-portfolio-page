@@ -3,22 +3,37 @@
 @tailwind utilities;
 
 :root {
-    --bg-accent: #ff6347; /* Define the variable */
+    --bg-accent: #ff6347;
+    /* Define the variable */
 }
 
 .hello-text {
-    color: var(--bg-accent); /* Use the variable */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.name-text {
+    margin-top: -10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3f6ef0;
+}
+
+.job-text {
 }
 
 .menu-area {
     padding: 20px;
     display: inline-block;
-    position: relative; /* Add relative positioning */
-    background-color: var(--bg-accent); /* Use the variable */
+    position: relative;
+    /* Add relative positioning */
+    background-color: var(--bg-accent);
+    /* Use the variable */
 }
 
 .menu-dropdown {
-    display: none; /* Hide the dropdown by default */
+    display: none;
+    /* Hide the dropdown by default */
     background-color: #ffffff;
     padding: 10px;
     border: 1px solid #cccccc;
@@ -26,79 +41,99 @@
 }
 
 .menu-area:hover .menu-dropdown {
-    display: block; /* Display the dropdown on hover */
-    position: relative; /* Position the dropdown relative to its parent */
-    z-index: 1000; /* Ensure the dropdown appears above other content */
+    display: block;
+    /* Display the dropdown on hover */
+    position: relative;
+    /* Position the dropdown relative to its parent */
+    z-index: 1000;
+    /* Ensure the dropdown appears above other content */
 }
 
 @layer components {
     .header {
-        color: #909090; /* Set text color */
-        display: flex; /* Use flexbox for layout */
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-        height: 130px; /* Set the height of the header */
-        padding-left: 50px; /* Add padding on the left */
-        padding-right: 50px; /* Add padding on the right */
-        margin-left: auto; /* Auto margin on the left */
-        margin-right: auto; /* Auto margin on the right */
+        color: #909090;
+        /* Set text color */
+        display: flex;
+        /* Use flexbox for layout */
+        justify-content: center;
+        /* Center items horizontally */
+        align-items: center;
+        /* Center items vertically */
+        height: 130px;
+        /* Set the height of the header */
+        padding-left: 50px;
+        /* Add padding on the left */
+        padding-right: 50px;
+        /* Add padding on the right */
+        margin-left: auto;
+        /* Auto margin on the left */
+        margin-right: auto;
+        /* Auto margin on the right */
         width: 87%;
-        margin-bottom: 60px; /* Add margin at the bottom */
+        margin-bottom: 60px;
+        /* Add margin at the bottom */
     }
+
     .body {
-        padding-left: 50px; /* Add padding on the left */
-        padding-right: 50px; /* Add padding on the right */
-        margin-left: auto; /* Auto margin on the left */
-        margin-right: auto; /* Auto margin on the right */
+        padding-left: 50px;
+        /* Add padding on the left */
+        padding-right: 50px;
+        /* Add padding on the right */
+        margin-left: auto;
+        /* Auto margin on the left */
+        margin-right: auto;
+        /* Auto margin on the right */
         width: 87%;
     }
 
     .headerlogo {
         margin-right: auto;
         line-height: 1.2;
-        margin-top: -8px;
     }
+
     .biglogo {
-        color: #707070;
-        font-size: 1.72rem;
+        color: #000000;
+        font-size: 2rem;
         /* make it bold, reduce letter spacing */
         font-weight: 600;
         letter-spacing: -1px;
     }
-    .smalllogo {
-        color: #aaaaaa;
-        letter-spacing: -0.32px;
-    }
+
     .headerpagelinks {
         display: flex;
         align-items: center;
-        margin-top: -5px;
     }
+
     .snslinks {
         display: flex;
         align-items: center;
     }
+
     .navcomponents {
         display: flex;
         margin-left: 50px;
     }
+
     .navcomponents:first-child {
         margin-left: 0px;
     }
+
     .navlogos {
         display: flex;
         margin-right: 20px;
     }
+
     .menuicon {
-        margin-top: 1px;
         margin-right: -10px;
     }
+
     .menudropdown {
         display: flex;
         align-items: center;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .nav-component {
         color: #909090;
         margin-bottom: 8px;
@@ -106,12 +141,3 @@
         color: #333333;
     }
 }
-
-/* Apply navy background color to the entire website */
-html {
-    background-color: white;
-    @apply text-black;
-}
-
-/* Appended CSS starts here */
-/* Add your additional styles here */
