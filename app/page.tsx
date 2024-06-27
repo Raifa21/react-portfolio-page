@@ -23,11 +23,10 @@ const Home = () => {
           <Button asChild className="contact-button">
             <Link href="/contactpage"> Contact Me </Link>
           </Button>
-
-          <div className="footer">
-            <p>Design. Create. Repeat.</p>
-          </div>
         </div>
+      </div>
+      <div className={`footer ${indieFlower.className}`}>
+        <p>Design. Create. Repeat.</p>
       </div>
     </>
   );

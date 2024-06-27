@@ -4,22 +4,19 @@
 
 :root {
     --bg-accent: #ff6347;
-    /* Define the variable */
+    --background-color: #f8f8f8;
 }
 
 .introduction {
-    padding-top: 120px;
+    padding-top: 220px;
     height: 100%;
 }
-.footer {
-    text-align: center;
-    margin-top: 175px;
-    padding: 25px;
-}
+
 .hello-text {
     font-size: 50px;
     font-weight: bold;
 }
+
 .contact-button {
     background-color: #ff6347;
     color: white;
@@ -29,6 +26,7 @@
     margin-top: 25px;
     text-decoration: none;
 }
+
 .contact-button:hover {
     background-color: #ff4500;
 }
@@ -46,6 +44,7 @@
     font-size: 30px;
     font-weight: bold;
 }
+
 .snslinks {
     display: flex;
     align-items: center;
@@ -57,14 +56,11 @@
     padding: 20px;
     display: inline-block;
     position: relative;
-    /* Add relative positioning */
     background-color: var(--bg-accent);
-    /* Use the variable */
 }
 
 .menu-dropdown {
     display: none;
-    /* Hide the dropdown by default */
     background-color: #ffffff;
     padding: 10px;
     border: 1px solid #cccccc;
@@ -73,52 +69,54 @@
 
 .menu-area:hover .menu-dropdown {
     display: block;
-    /* Display the dropdown on hover */
     position: relative;
-    /* Position the dropdown relative to its parent */
     z-index: 1000;
-    /* Ensure the dropdown appears above other content */
 }
 
 @layer components {
     .header {
+        position: fixed;
+        background-color: #ffffff;
+        top: 0;
         color: #909090;
-        /* Set text color */
         display: flex;
-        /* Use flexbox for layout */
         justify-content: center;
-        /* Center items horizontally */
         align-items: center;
-        /* Center items vertically */
         height: 100px;
-        /* Set the height of the header */
         padding-left: 110px;
-        /* Add padding on the left */
         padding-right: 110px;
-        /* Add padding on the right */
         margin-left: auto;
-        /* Auto margin on the left */
         margin-right: auto;
-        /* Auto margin on the right */
         width: 100%;
-        margin-bottom: 0px;
-        /* Add margin at the bottom */
         border-bottom: 1px solid #e0e0e0;
-        /* Add a border at the bottom */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
 
     .body {
         background-color: #f8f8f8;
         padding-left: 110px;
-        /* Add padding on the left */
         padding-right: 110px;
-        /* Add padding on the right */
         margin-left: auto;
-        /* Auto margin on the left */
         margin-right: auto;
-        /* Auto margin on the right */
         width: 100%;
+        min-height: 100vh; /* Ensure the body covers the full viewport height */
+        box-sizing: border-box; /* Include padding in the height calculation */
+    }
+
+    .footer {
+        background-color: #f8f8f8;
+        position: fixed;
+        bottom: 0;
+        left: 0; /* Ensure it starts from the left edge */
+        right: 0; /* Ensure it spans to the right edge */
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1000; /* Ensure the footer is on top of other elements */
     }
 
     .headerlogo {
@@ -129,7 +127,6 @@
     .biglogo {
         color: #000000;
         font-size: 2rem;
-        /* make it bold, reduce letter spacing */
         font-weight: 600;
         letter-spacing: -1px;
     }

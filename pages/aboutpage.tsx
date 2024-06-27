@@ -34,7 +34,7 @@ export default function Home() {
           </p>
         </div>
         <div className="skills-text">
-          <h1 className="title-text">Skills</h1>
+          <h1 className="second-title-text">Skills</h1>
           <div className={styles.grid}>
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
@@ -42,6 +42,27 @@ export default function Home() {
               width={64}
               height={64}
             />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg"
+              alt="C++ Icon"
+              width={64}
+              height={64}
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+              alt="C# Icon"
+              width={64}
+              height={64}
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"
+              alt="Python Icon"
+              width={64}
+              height={64}
+            />
+          </div>
+          <br />
+          <div className={styles.grid}>
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               alt="React Icon"
@@ -66,17 +87,38 @@ export default function Home() {
               width={64}
               height={64}
             />
+          </div>
+          <br />
+          <div className={styles.grid}>
             <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg"
-              alt="C++ Icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg"
+              alt="Git Icon"
+              width={64}
+              height={64}
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="GitHub Icon"
+              width={64}
+              height={64}
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-plain.svg"
+              alt="DataGrip Icon"
+              width={64}
+              height={64}
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-plain.svg"
+              alt="Unity Icon"
               width={64}
               height={64}
             />
           </div>
         </div>
-        <div className="footer">
-          <p>Design. Create. Repeat.</p>
-        </div>
+      </div>
+      <div className={`footer ${indieFlower.className}`}>
+        <p>Design. Create. Repeat.</p>
       </div>
     </>
   );
