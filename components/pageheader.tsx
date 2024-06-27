@@ -45,13 +45,13 @@ const PageHeader: React.FC = () => {
           <HeaderMenu />
         ) : (
           <div className={`headerpagelinks ${indieFlower.className}`}>
-            <Link href="@pages/aboutpage" legacyBehavior passHref>
+            <Link href="aboutpage" legacyBehavior passHref>
               <a className="navcomponents">About Me</a>
             </Link>
-            <Link href="@pages/workspage" legacyBehavior passHref>
+            <Link href="workspage" legacyBehavior passHref>
               <a className="navcomponents">Works</a>
             </Link>
-            <Link href="@pages/contactpage" legacyBehavior passHref>
+            <Link href="contactpage" legacyBehavior passHref>
               <a className="navcomponents">Contact</a>
             </Link>
           </div>

@@ -4,18 +4,18 @@
 
 :root {
     --bg-accent: #ff6347;
+    background-color: #f8f8f8;
     /* Define the variable */
 }
 
 .introduction {
-    padding-top: 140px;
+    padding-top: 120px;
     height: 100%;
 }
 .footer {
-    background-color: #f8f8f8;
     text-align: center;
-    margin-top: 190px;
-    padding: 20px;
+    margin-top: 175px;
+    padding: 25px;
 }
 .hello-text {
     font-size: 50px;
@@ -27,7 +27,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     text-decoration: none;
 }
 .contact-button:hover {
@@ -46,6 +46,12 @@
     margin-top: -10px;
     font-size: 30px;
     font-weight: bold;
+}
+.snslinks {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 10px;
 }
 
 .menu-area {
@@ -130,11 +136,6 @@
     }
 
     .headerpagelinks {
-        display: flex;
-        align-items: center;
-    }
-
-    .snslinks {
         display: flex;
         align-items: center;
     }

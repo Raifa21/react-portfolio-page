@@ -1,6 +1,7 @@
 "use client";
 
 import PageHeader from "@/components/pageheader";
+import "/styles/globals.css";
 
 const ContactPage = () => {
   return (

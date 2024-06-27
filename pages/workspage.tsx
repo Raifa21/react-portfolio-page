@@ -1,6 +1,7 @@
 "use client";
 
 import PageHeader from "@/components/pageheader";
+import "/styles/globals.css";
 
 export default function Home() {
   return (
