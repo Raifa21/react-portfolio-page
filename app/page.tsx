@@ -18,9 +18,9 @@ export default function Home() {
           <div className="introduction">
             <p className="hello-text"> Hello! I am:</p>
             <p className="name-text"> Kotaro Yoshizawa</p>
-            <p className="job-text">Web Developer / Digital Composer</p>
+            <p className="job-text">Digital Composer / Web Developer</p>
             <Button asChild className="contact-button">
-              <Link href="/pages/contactpage"> Contact Me </Link>
+              <Link href="/contactpage"> Contact Me </Link>
             </Button>
             <div className="footer">
               <p>Design. Create. Repeat.</p>

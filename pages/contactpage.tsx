@@ -2,11 +2,13 @@
 
 import PageHeader from "@/components/pageheader";
 
-export default function Home() {
+const ContactPage = () => {
   return (
-    <>
+    <div>
       <PageHeader />
-      <h1> work in progress </h1>
-    </>
+      <p> Work in progress </p>
+    </div>
   );
-}
+};
+
+export default ContactPage;
