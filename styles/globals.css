@@ -7,19 +7,34 @@
     /* Define the variable */
 }
 
+.introduction {
+    margin-top: 80px;
+    margin-bottom: 240px;
+}
+.develop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
 .hello-text {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .name-text {
     margin-top: -10px;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: #3f6ef0;
 }
 
 .job-text {
+    margin-top: -10px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .menu-area {

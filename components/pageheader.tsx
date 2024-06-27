@@ -3,9 +3,9 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import HeaderMenu from "./menu";
-import { Shadows_Into_Light } from "next/font/google";
+import { Indie_Flower } from "next/font/google";
 
-const shadowsIntoLight = Shadows_Into_Light({
+const indieFlower = Indie_Flower({
   weight: "400",
   subsets: ["latin"],
 });
@@ -34,7 +34,7 @@ const PageHeader: React.FC = () => {
       <div className="headerlogo">
         <div>
           <Link href="/" legacyBehavior passHref>
-            <div className={shadowsIntoLight.className}>
+            <div className={indieFlower.className}>
               <a className="biglogo">K.Yoshi</a>
             </div>
           </Link>
@@ -44,7 +44,7 @@ const PageHeader: React.FC = () => {
         {isCompact ? (
           <HeaderMenu />
         ) : (
-          <div className="headerpagelinks">
+          <div className={`headerpagelinks ${indieFlower.className}`}>
             <Link href="/pages/about" legacyBehavior passHref>
               <a className="navcomponents">About Me</a>
             </Link>
