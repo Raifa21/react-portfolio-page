@@ -15,7 +15,7 @@ const PageHeader: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsCompact(window.innerWidth < 600); // Change 768 to your desired width threshold
+      setIsCompact(window.innerWidth < 606);
     };
 
     // Initial call to set the initial state
@@ -45,13 +45,13 @@ const PageHeader: React.FC = () => {
           <HeaderMenu />
         ) : (
           <div className={`headerpagelinks ${indieFlower.className}`}>
-            <Link href="/pages/about" legacyBehavior passHref>
+            <Link href="@pages/aboutpage" legacyBehavior passHref>
               <a className="navcomponents">About Me</a>
             </Link>
-            <Link href="/pages/works" legacyBehavior passHref>
+            <Link href="@pages/workspage" legacyBehavior passHref>
               <a className="navcomponents">Works</a>
             </Link>
-            <Link href="/pages/contact" legacyBehavior passHref>
+            <Link href="@pages/contactpage" legacyBehavior passHref>
               <a className="navcomponents">Contact</a>
             </Link>
           </div>

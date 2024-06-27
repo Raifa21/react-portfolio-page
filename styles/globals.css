@@ -8,27 +8,38 @@
 }
 
 .introduction {
-    margin-top: 80px;
-    margin-bottom: 240px;
+    padding-top: 140px;
+    height: 100%;
 }
-.develop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
+.footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-top: 190px;
+    padding: 20px;
 }
-
 .hello-text {
     font-size: 50px;
     font-weight: bold;
 }
+.contact-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.contact-button:hover {
+    background-color: #ff4500;
+}
 
 .name-text {
-    margin-top: -10px;
+    margin-top: -20px;
     font-size: 60px;
     font-weight: bold;
     color: #3f6ef0;
+    letter-spacing: -0.1px;
 }
 
 .job-text {
@@ -74,31 +85,35 @@
         /* Center items horizontally */
         align-items: center;
         /* Center items vertically */
-        height: 130px;
+        height: 100px;
         /* Set the height of the header */
-        padding-left: 50px;
+        padding-left: 110px;
         /* Add padding on the left */
-        padding-right: 50px;
+        padding-right: 110px;
         /* Add padding on the right */
         margin-left: auto;
         /* Auto margin on the left */
         margin-right: auto;
         /* Auto margin on the right */
-        width: 87%;
-        margin-bottom: 60px;
+        width: 100%;
+        margin-bottom: 0px;
         /* Add margin at the bottom */
+        border-bottom: 1px solid #e0e0e0;
+        /* Add a border at the bottom */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .body {
-        padding-left: 50px;
+        background-color: #f8f8f8;
+        padding-left: 110px;
         /* Add padding on the left */
-        padding-right: 50px;
+        padding-right: 110px;
         /* Add padding on the right */
         margin-left: auto;
         /* Auto margin on the left */
         margin-right: auto;
         /* Auto margin on the right */
-        width: 87%;
+        width: 100%;
     }
 
     .headerlogo {
