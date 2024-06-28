@@ -16,9 +16,18 @@ const ContactPage = () => {
     <>
       <PageHeader />
       <div className={`mainpage body ${indieFlower.className}`}>
+        <div className="title">Get in touch with me!</div>
         <div className="contact">
-          <h1>Contact Me</h1>
-          <ProfileForm />
+          <div className="left">
+            <div className="left-1">
+              <h2>Address</h2>
+              <p>1234 Main St</p>
+              <p>City, State, Zip</p>
+            </div>
+          </div>
+          <div className="right">
+            <ProfileForm />
+          </div>
         </div>
       </div>
     </>

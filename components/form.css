@@ -1,0 +1,19 @@
+.firstname {
+    flex: 1;
+    margin-right: 5%;
+}
+.lastname {
+    flex: 1;
+}
+.name {
+    display: flex;
+    margin-bottom: -20px;
+}
+.roundedinput {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+.email {
+    margin-bottom: 20px;
+}

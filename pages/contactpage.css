@@ -1,6 +1,28 @@
-.contact {
+.title {
     padding-top: 130px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: -0.1px;
+}
+.contact {
+    display: flex;
+}
+.left,
+.right {
+    margin-top: 30px;
+}
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+.right {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    flex: 2;
+}
+.left-1 {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
 }
