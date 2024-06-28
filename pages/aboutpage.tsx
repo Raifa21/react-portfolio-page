@@ -13,7 +13,7 @@ const indieFlower = Indie_Flower({
   subsets: ["latin"],
 });
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <PageHeader />
@@ -122,4 +122,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default About;
