@@ -1,0 +1,16 @@
+/* src/components/ThailandTime.css */
+.local-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures the div takes up the full height */
+    font-size: 2rem; /* Adjust font size for the time display */
+    text-align: center; /* Center text horizontally */
+    margin-right: 10px; /* Add some spacing to the left */
+    margin-left: auto; /* Add some spacing to the right */
+}
+
+.time-label {
+    font-size: 1rem; /* Adjust font size for the time label */
+    margin-right: 0.5rem; /* Add some spacing between label and time */
+}
