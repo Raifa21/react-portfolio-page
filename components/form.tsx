@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -23,7 +22,7 @@ const formSchema = z.object({
   firstname: z.string().min(2),
   lastname: z.string().min(2),
   email: z.string().email(),
-  message: z.string(),
+  message: z.string().min(5),
 });
 
 export function ProfileForm() {
@@ -37,13 +36,30 @@ export function ProfileForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        alert("Form submitted successfully");
+        form.reset(); // Reset form after successful submission
+      } else {
+        alert("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="form-style">
         <div className="name">
           <div className="firstname">
             <FormField
@@ -115,7 +131,11 @@ export function ProfileForm() {
             )}
           />
         </div>
-        <Button type="submit">Submit</Button>
+        <div className="submit">
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
+        </div>
       </form>
     </Form>
   );
